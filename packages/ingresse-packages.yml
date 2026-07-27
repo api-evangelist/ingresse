@@ -1,0 +1,95 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/org/ingresse + https://packagist.org/search.json?q=ingresse + https://github.com/ingresse
+packages:
+  - language: javascript
+    registry: npm
+    name: "@ingresse/sdk"
+    version: 0.5.0
+    url: https://www.npmjs.com/package/@ingresse/sdk
+    repository: https://github.com/ingresse/js-core
+    install: npm install @ingresse/sdk
+    license: MIT
+    description: Ingresse platform JavaScript SDK (NodeJS and browsers).
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@ingresse/request"
+    version: 0.0.5
+    url: https://www.npmjs.com/package/@ingresse/request
+    repository: https://github.com/ingresse/js-core
+    install: npm install @ingresse/request
+    license: MIT
+    description: Ingresse Requests utilities based on the Fetch API.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@ingresse/injector"
+    version: 0.0.2
+    url: https://www.npmjs.com/package/@ingresse/injector
+    repository: https://github.com/ingresse/js-core
+    install: npm install @ingresse/injector
+    license: MIT
+    description: Ingresse Script Injector utility.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@ingresse/trackers"
+    version: 0.0.3
+    url: https://www.npmjs.com/package/@ingresse/trackers
+    repository: https://github.com/ingresse/js-core
+    install: npm install @ingresse/trackers
+    license: MIT
+    description: Ingresse JS analytics and anti-fraud helpers for browsers.
+    official: true
+  - language: kotlin
+    registry: github
+    name: android-sdk
+    url: https://github.com/ingresse/android-sdk
+    install: "See repo (Gradle)"
+    description: Ingresse Android SDK.
+    official: true
+  - language: swift
+    registry: github
+    name: ios-sdk
+    url: https://github.com/ingresse/ios-sdk
+    install: "See repo (CocoaPods/SPM)"
+    license: MIT
+    description: Ingresse iOS SDK.
+    official: true
+  - language: php
+    registry: packagist
+    name: ingresse/message-queue-php
+    url: https://packagist.org/packages/ingresse/message-queue-php
+    install: composer require ingresse/message-queue-php
+    description: Message Queue PHP library to publish and subscribe to queues.
+    official: true
+  - language: php
+    registry: packagist
+    name: ingresse/behat-api-extension
+    url: https://packagist.org/packages/ingresse/behat-api-extension
+    install: composer require ingresse/behat-api-extension
+    description: Ingresse API Extension for Behat (API testing).
+    official: true
+  - language: php
+    registry: packagist
+    name: ingresse/legiti-php-sdk
+    url: https://packagist.org/packages/ingresse/legiti-php-sdk
+    install: composer require ingresse/legiti-php-sdk
+    description: Ingresse Legiti (anti-fraud) PHP SDK.
+    official: true
+  - language: php
+    registry: packagist
+    name: ingresse/facebook-accountkit-php
+    url: https://packagist.org/packages/ingresse/facebook-accountkit-php
+    install: composer require ingresse/facebook-accountkit-php
+    description: Facebook Account Kit PHP SDK.
+    official: true
+  - language: python
+    registry: pypi
+    name: message-queue
+    url: https://pypi.org/project/message-queue/
+    repository: https://github.com/ingresse/message-queue-python
+    install: pip install message-queue
+    description: Ingresse Python message-queue library (publish/subscribe).
+    official: true

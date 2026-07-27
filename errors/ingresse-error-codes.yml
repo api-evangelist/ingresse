@@ -1,0 +1,53 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.ingresse.com/page/api-exception-codes
+format: ingresse-exception-codes
+description: >-
+  Ingresse groups API exceptions into six numeric context ranges (1000-6000
+  series). Each range maps to a class of failure. HTTP status codes and the JSON
+  error envelope field names are not published in the public exception-code
+  reference; example codes below are quoted verbatim from the docs.
+categories:
+  - range: "1000-1147"
+    id: usage
+    title: Usage Exceptions
+    meaning: Invalid routes, malformed parameters, and format errors.
+  - range: "2000-2055"
+    id: unauthorized
+    title: Unauthorized Access
+    meaning: Authentication and permission failures.
+  - range: "3000-3085"
+    id: database
+    title: Database Exceptions
+    meaning: Data retrieval and storage issues.
+  - range: "4000-4055"
+    id: fatal
+    title: Fatal Errors
+    meaning: System-level failures requiring administrator intervention.
+  - range: "5000-5013"
+    id: external
+    title: External Exceptions
+    meaning: Third-party service failures (payment, email, social).
+  - range: "6000-6065"
+    id: context
+    title: Context Exceptions
+    meaning: Business-logic violations (sales rules, event configuration).
+examples:
+  - code: 1001
+    category: usage
+    message: "Parameter tickets must be an array and can not be empty"
+  - code: 2001
+    category: unauthorized
+    message: "Access Denied: The userId is not authenticated!"
+  - code: 3002
+    category: database
+    message: "Event ID not found"
+  - code: 4001
+    category: fatal
+    message: "Missing eventDateDao"
+  - code: 5002
+    category: external
+    message: "Unknown payment error with status"
+  - code: 6001
+    category: context
+    message: "Sale is not enabled for this event. Contact event organizer"

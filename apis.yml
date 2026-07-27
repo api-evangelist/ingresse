@@ -1,7 +1,15 @@
 aid: ingresse
 name: Ingresse
-description: Ingresse is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ingresse is a Brazilian ticketing-as-a-service (TaaS) platform that powers
+  event ticket sales, access control, and the attendee experience for organizers
+  and partners. Its public developer platform lets integrators build tools and
+  services on top of Ingresse — creating events, selling and validating tickets,
+  managing users, and handling payments — through a versioned REST API (v1 and
+  v2) authenticated with an individually issued API key. Ingresse publishes
+  first-party SDKs for JavaScript/Node, Android, iOS, and PHP, plus message-queue
+  libraries, and hosts its reference documentation on a ReadMe developer portal.
+  Ingresse is backed by 500 Global.
 url: https://raw.githubusercontent.com/api-evangelist/ingresse/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +17,47 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://ingresse.com/favicon.ico
 tags:
 - Company
-apis: []
+- Ticketing
+- Events
+- Ticketing as a Service
+- Payments
+- Entertainment
+- Event Management
+- Brazil
+- SDKs
+apis:
+- name: Ingresse API
+  description: >-
+    Versioned REST API (v1 and v2) for event ticketing — events, tickets,
+    checkout/payments, users, and access control — authenticated with an
+    individually issued API key passed as the `apikey` query parameter.
+  humanURL: https://developer.ingresse.com
+  baseURL: https://api.ingresse.com
+  properties:
+  - type: Documentation
+    url: https://developer.ingresse.com/docs
+  - type: APIReference
+    url: https://developer.ingresse.com/reference
+  - type: Authentication
+    url: authentication/ingresse-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +66,36 @@ maintainers:
 common:
 - type: Website
   url: https://ingresse.com
+- type: DeveloperPortal
+  url: https://developer.ingresse.com
+- type: Documentation
+  url: https://developer.ingresse.com/docs
+- type: APIReference
+  url: https://developer.ingresse.com/reference
+- type: Support
+  url: https://developer.ingresse.com/discuss
+- type: GitHubOrganization
+  url: https://github.com/ingresse
+- type: LLMsTxt
+  url: llms/ingresse-llms.txt
+- type: Packages
+  url: packages/ingresse-packages.yml
+- type: SDKs
+  url: packages/ingresse-packages.yml
+- type: Authentication
+  url: authentication/ingresse-authentication.yml
+- type: Conventions
+  url: conventions/ingresse-conventions.yml
+- type: ErrorCatalog
+  url: errors/ingresse-error-codes.yml
+- type: Lifecycle
+  url: lifecycle/ingresse-lifecycle.yml
+- type: Sandbox
+  url: sandbox/ingresse-sandbox.yml
+- type: DomainSecurity
+  url: security/ingresse-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

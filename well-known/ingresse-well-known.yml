@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of /.well-known/* on Ingresse hosts
+hosts:
+  - https://ingresse.com
+  - https://api.ingresse.com
+documents:
+  - host: https://ingresse.com
+    path: /.well-known/security.txt
+    status: 403
+  - host: https://ingresse.com
+    path: /.well-known/openid-configuration
+    status: 403
+  - host: https://api.ingresse.com
+    path: /.well-known/security.txt
+    status: 403
+notes: >-
+  No /.well-known discovery documents were retrievable. The web/API hosts return
+  403 to automated clients (bot protection), so no security.txt, OIDC, or
+  api-catalog document could be captured. No 200 responses; nothing saved.

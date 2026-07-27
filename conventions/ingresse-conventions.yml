@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.ingresse.com/docs
+description: >-
+  Cross-cutting request/response semantics for the Ingresse (TaaS) API,
+  captured from the public developer documentation. Fields left null are not
+  documented on the public (non-authenticated) portal.
+authentication:
+  style: api-key-query
+  parameter: apikey
+  ref: authentication/ingresse-authentication.yml
+versioning:
+  scheme: uri-path
+  versions: [v1, v2]
+  notes: The API exposes both v1.0 and v2.0 under the same host.
+  ref: lifecycle/ingresse-lifecycle.yml
+pagination:
+  documented: true
+  style: null
+  notes: >-
+    The documentation references a dedicated pagination guide, but the specific
+    parameter and response-field mechanics are not published on the public
+    portal.
+idempotency:
+  documented: false
+  notes: No idempotency-key contract is documented in the public reference.
+error_envelope:
+  ref: errors/ingresse-error-codes.yml
+  notes: >-
+    Errors are organized into numeric exception-code ranges (1000-6000). The
+    JSON envelope field names are not published publicly.
+rate_limiting:
+  documented: false
+content_type: application/json

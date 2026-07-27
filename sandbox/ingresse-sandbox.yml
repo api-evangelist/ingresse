@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.ingresse.com/docs
+description: >-
+  Ingresse does not expose a self-service sandbox with published test cards or
+  magic values on its public portal. The documentation instructs integrators to
+  create dedicated test events for integration work, and notes that a formal
+  sandbox environment is available on request from the Ingresse team.
+test_mode:
+  self_service: false
+  approach: create-test-events
+  formal_sandbox: request-only
+test_values: []
+notes: >-
+  No test card numbers, test tokens, or fixture/trigger tooling are published
+  publicly. API keys (including any sandbox key) are individually issued by the
+  Ingresse team.

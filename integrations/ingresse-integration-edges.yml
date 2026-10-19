@@ -1,0 +1,106 @@
+edges:
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@ingresse/injector
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@ingresse/injector'
+      version: 0.0.2
+      released: '2023-09-20'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@ingresse/injector
+      repo_leg: github-org:ingresse
+      publisher_leg: email:ingresse.com
+      matched_by: domain
+    - name: '@ingresse/request'
+      version: 0.0.5
+      released: '2023-09-20'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@ingresse/request
+      repo_leg: github-org:ingresse
+      publisher_leg: email:ingresse.com
+      matched_by: domain
+    - name: '@ingresse/sdk'
+      version: 0.5.0
+      released: '2024-10-28'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@ingresse/sdk
+      repo_leg: github-org:ingresse
+      publisher_leg: email:ingresse.com
+      matched_by: domain
+    - name: '@ingresse/trackers'
+      version: 0.0.3
+      released: '2023-09-20'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@ingresse/trackers
+      repo_leg: github-org:ingresse
+      publisher_leg: email:ingresse.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+- partner_name: PyPI
+  partner: pypi
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Python)
+  evidence: https://pypi.org/project/message-queue/
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: PyPI (public registry JSON)
+    spec_file: null
+    language: Python
+    packages:
+    - name: message-queue
+      version: 0.3.4
+      released: '2019-07-29'
+      released_field: upload_time
+      lapsed: true
+      page: https://pypi.org/project/message-queue/
+      repo_leg: github-org:ingresse
+      publisher_leg: email:ingresse.com
+      matched_by: domain
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
